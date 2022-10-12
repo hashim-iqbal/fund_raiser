@@ -1,0 +1,6 @@
+development:
+  postgres_host: *******
+  postgres_port: *******
+  postgres_pool: *******
+  postgres_username: *******
+  postgres_password: *******
