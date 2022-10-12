@@ -1,0 +1,2 @@
+This user <<%= @user.email %>> invites you to donate to his/her kid's school named <%= @school.name %>.
+If you wanna donate, you can click on <%= link_to 'donate', "#{ENV['app_url']}/donate?account_number=#{@school.account_number}&email=#{@email}" %> link.
