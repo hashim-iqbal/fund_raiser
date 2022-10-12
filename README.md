@@ -1,24 +1,40 @@
-# README
+# School Fund raiser api
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This will serve as the developer documentation. Anything related to the stack, where things are located, or how to setup or access them will be documented here.
 
-Things you may want to cover:
+## Technologies
 
-* Ruby version
+* Ruby 3.0.0
+* Rails  6.1.3.2
+* TestSuite Rspec
+* Faker
 
-* System dependencies
+## Development Setup
 
-* Configuration
+1. Clone the project repo
 
-* Database creation
+        $ git clone https://github.com/hashim-iqbal/fund_raiser.git
 
-* Database initialization
+2. Get into the project directory
 
-* How to run the test suite
+        cd fund_raiser_api
 
-* Services (job queues, cache servers, search engines, etc.)
+3. Install gems and their dependencies
 
-* Deployment instructions
+        $ bundle install
 
-* ...
+4. Run this command to create and populate DB
+    
+        $ rails db:create db:migrate db:seed
+
+## For starting the development server
+
+        $ bundle exec rails s
+
+* Development server by default start on the port 3000
+
+## For running Test cases
+
+Run following command to run the test cases
+
+    $ rails rspec
